@@ -26,14 +26,10 @@ public class Acm1068
       }
 
       boolean isPositive = number > 0;
-      int sum = 0;
       int start = isPositive ? 1 : number;
       int end = isPositive ? number : 1;
-
-      for (int i = start; i <= end; i++)
-      {
-         sum += i;
-      }
+      int size = end - start + 1;
+      int sum = (start + end) * size / 2;
 
       System.out.println(sum);
    }
